@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="header_main sticky-top">
+        <div class="container">
+            <div class="elements">
+                <p>LET'S PARTY!</p>
+                <ul class="nav">
+                    <li class="nav__links">                        
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav__links">                        
+                        <a href="#artists">Artists</a>
+                    </li>
+                    <li class="nav__links">                        
+                        <a href="#agenda">Agenda</a>
+                    </li>
+                    <li class="nav__links">                        
+                        <a href="#address">address</a>
+                    </li>
+                </ul>
+                <span title="Click here to confirm your presence">Register</span>
+            </div>         
+        </div>
+    </header>
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero__elements">
+                <span class="hero__elements__title">Join Us for an Unforgettable Birthday Bash!</span>
+                <p class="hero__elements__description">Celebrate this special day with fun, laughter, and memories to last a lifetime. Enjoy exciting activities, delicious food, and great company. Don’t miss out on the party of the year!</p>
+                <span class="hero__elements__button" title="Click here to confirm your presence">Register</span>
+            </div>
+        </div>        
+    </section>
+    <section id="about" class="about" data-aos="fade-right">
+        <div class="container">
+            <div class="about__elements">
+                <div class="about__elements__info">
+                    <h1>About Roger's 38th Birthday Bash</h1>
+                    <hr>
+                    <p>This year’s celebration will be held at an incredible venue, perfect for a night of fun and excitement. The party will feature live performances from various artists, ensuring non-stop entertainment throughout the evening.<br/><br/>
+                        Expect a vibrant atmosphere, with upbeat music, dazzling lights, and a joyful crowd. Delicious food and drinks will be available to keep everyone energized and ready to celebrate.<br/><br/>
+                        Join us for an unforgettable night filled with laughter, dancing, and wonderful memories. Let’s make Roger's 38th birthday a truly special event!</p>
+                </div>
+                <div class="about__elements__counter">
+                        <ul class="eventTime">                            
+                            <li class="eventTime__item">
+                                <span eventTime__item__info id="days">05</span>
+                                <p eventTime__item__description>Days</p>
+                            </li>
+                            <li class="eventTime__item">
+                                <span eventTime__item__info id="hours">05</span>
+                                <p eventTime__item__description>Hours</p>
+                            </li>
+                            <li class="eventTime__item">
+                                <span eventTime__item__info id="minutes">05</span>
+                                <p eventTime__item__description>Min</p>
+                            </li>
+                            <li class="eventTime__item">
+                                <span eventTime__item__info id="seconds">05</span>
+                                <p eventTime__item__description>Sec</p>
+                            </li>
+                        </ul>
+                        <p class="timeToEvent" id="timeTostart">time to start the event</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="artists" class="artists">
+        <div class="container">
+            <h1>Artists Performing at Roger's 38th Birthday Bash</h1>
+            <ul class="performing">
+                <li class="performing__item">
+                    <img class="performing__item__image" data-aos="flip-left" src="https://img.odcdn.com.br/wp-content/uploads/2024/02/Eminem.png" alt="Eminem">
+                    <p class="performing__item__title">Eminem</p>
+                </li>
+                <li class="performing__item">
+                    <img class="performing__item__image" data-aos="flip-left" src="https://www.otempo.com.br/content/dam/otempo/editorias/entretenimento/filmes-e-series/2024/1/entretenimento-vocalista-do-red-hot-chili-peppers-vai-ganhar-cinebiografia-1713576843.jpeg" alt="Red Hot Chili Peppers">
+                    <p class="performing__item__title">Red Hot Chili Peppers</p>
+                </li>
+                <li class="performing__item">
+                    <img class="performing__item__image" data-aos="flip-left" src="https://media.cnn.com/api/v1/images/stellar/prod/230315091428-diplo-0312-restricted.jpg?c=original" alt="Diplo">
+                    <p class="performing__item__title">Diplo</p>
+                </li>
+                <li class="performing__item">
+                    <img class="performing__item__image" data-aos="flip-left" src="https://ogimg.infoglobo.com.br/in/25183869-2f3-b54/FT1086A/drake.jpeg.jpg" alt="Drake">
+                    <p class="performing__item__title">Drake</p>
+                </li>
+                <li class="performing__item">
+                    <img class="performing__item__image" data-aos="flip-left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9BGR815pzhqonLak1t7nDYg5U-whL1avaw&s" alt="Rihanna">
+                    <p class="performing__item__title">Rihanna</p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <section id="agenda" class="agenda" data-aos="fade-left">
+        <div class="container">
+            <h1>The Agenda</h1>
+            <div class="horizontal_hr"></div>
+            <img class="show_clock" src="./images/clock.svg" alt="">
+            <p class="show_hour">20:00 - 21:30</p>
+            <p class="show_artist">Diplo</p>
+            <p class="show_description">Renowned for his incredible DJ sets, Diplo will keep the dance floor packed with his mix of the latest hits and classic tunes.</p>
+            <div class="vertical_hr"></div>
+            <img class="show_clock" src="./images/clock.svg" alt="">
+            <p class="show_hour">22:00 - 23:30</p>
+            <p class="show_artist">Red Hot Chili Peppers</p>
+            <p class="show_description">An amazing band, Red Hot Chili Peppers will charm you with their soulful voice and dynamic stage presence. Get ready for a performance that will leave you wanting more.</p>
+            <div class="vertical_hr"></div>
+            <img class="show_clock" src="./images/clock.svg" alt="">
+            <p class="show_hour">00:00 - 01:30</p>
+            <p class="show_artist">Eminem</p>
+            <p class="show_description">Our main act is none other than Eminem, bringing his electrifying rap performance to the stage. Known for his captivating shows and chart-topping hits, he is sure to be the highlight of the night.</p>
+            <div class="vertical_hr"></div>
+            <img class="show_clock" src="./images/clock.svg" alt="">
+            <p class="show_hour">02:00 03:30</p>
+            <p class="show_artist">Rihanna</p>
+            <p class="show_description">Bringing a fresh and energetic vibe, Rihanna will get the party started with her infectious beats and high-energy performance.</p>
+            <div class="vertical_hr"></div>
+            <img class="show_clock" src="./images/clock.svg" alt="">
+            <p class="show_hour">04:00 - 05:30</p>
+            <p class="show_artist">Drake</p>
+            <p class="show_description">With a unique style and powerful lyrics, Drake is set to deliver a show-stopping performance. His music will have you dancing and singing along all night.</p>
+        </div>
+    </section>
+    <section id="address" class="address">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="address__elements">
+                <h1>Event's place</h1>
+                <div class="address__elements__main">
+                    <div class="address__elements__main__date">
+                        <img src="images/calendar.svg" alt="Calendar">
+                        <p>01/27/2025 19:00</p>                        
+                    </div>
+                    <div class="address__elements__main__location">
+                        <h3>Allianz Parque</h3>                        
+                        <p>Avenue Francisco Matarazzo<br/>Palestra Itália<br/>São Paulo</p>
+                    </div>
+            </div>
+            </div>            
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

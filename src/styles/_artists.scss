@@ -1,0 +1,67 @@
+@use "variables";
+
+.artists {
+    background-color: variables.$gray;
+    padding: 74px 0px;
+    text-align: center;
+
+    h1 {
+        color: variables.$black;
+        font-size: 36px;
+        text-transform: uppercase;     
+    }
+
+    .performing {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 80px;
+        row-gap: 48px;
+        margin-top: 40px;
+
+        &__item {
+            text-align: center;
+
+            &__image {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+
+            &__title {
+                font-size: 18px;
+                font-weight: 700;
+                color: variables.$secundary_purple;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @media (max-width: variables.$desktop) {
+        padding: 30px 30px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        .performing {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: variables.$tablet) {
+        h1 {
+            font-size: 28px;
+        }
+
+        .performing {
+            grid-template-columns: 1fr;
+
+            &__item__image {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    }
+}

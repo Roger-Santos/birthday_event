@@ -1,0 +1,72 @@
+@use 'variables';
+
+.header_main{
+    width: 100%;
+    background-color: variables.$primary_purple;
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
+    z-index: 5;
+
+    .elements {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+
+        p {
+            font-weight: 700;
+        }
+
+        .nav {
+            display:flex;
+            margin-top: 8px;
+
+            &__links {
+                cursor: pointer;
+                padding-bottom: 8px;
+                border: 2px solid transparent;
+                margin: 0px 24px;
+
+                &:hover {
+                    border-bottom: solid 2px variables.$secundary_purple;
+                    filter: brightness(120%);
+                }
+            }
+        }
+
+        span {
+            width: 140px;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: variables.$secundary_purple;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(120%);
+            }
+        }
+    }
+
+    @media (max-width: variables.$desktop) {
+        padding: 16px 30px;
+    }
+
+    @media (max-width: variables.$tablet) {
+
+        .nav {
+            width: 100%;
+            justify-content: center;
+        }
+
+        p {
+            display: none;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+}

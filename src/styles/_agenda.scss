@@ -1,0 +1,64 @@
+@use "variables";
+
+.agenda {
+    padding: 74px 0px;
+    text-align: center;
+
+    h1 {
+        color: variables.$black;
+        font-size: 36px;
+        text-transform: uppercase;     
+    }
+
+    .horizontal_hr {
+        margin: 30 auto;
+        width: 30px;
+        height: 2px;
+        background-color: variables.$secundary_purple;
+    }
+
+    .show_clock {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 8px;
+    }
+
+    .show_hour {
+        font-size: 24px;
+        font-weight: 700;
+        color: variables.$black;
+    }
+
+    .show_artist {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 16px 0;
+        color: variables.$secundary_purple;
+        text-transform: uppercase;
+    }
+
+    .show_description {
+        font-size: 18px;
+        color: variables.$black;
+    }
+
+    .vertical_hr {
+        margin: 30 auto;
+        background-color: variables.$secundary_purple;
+        width: 2px;
+        height: 30px;
+    }
+
+    @media (max-width: variables.$desktop) {
+        padding: 30px 30px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        .show_description {
+            font-size: 16px;
+            color: variables.$black;
+        }
+    }
+}
